@@ -113,9 +113,8 @@ console.log('Hello from the new object function', newObject(['hi', 'hello', 'are
 //   return a + b + c + d;
 // };
 
-const sum2 = (a, b, c, d) => {
-  return a+b+c+d
-};
+const sum2 = (a, b, c, d) => a+b+c+d;
+ 
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // console.log(sum(1, 2, 3, 4));
@@ -130,7 +129,7 @@ console.log(sum2(1, 2, 3, 4));
 //   };
 // };
 
-let obArrow= ()=> ({
+let objectLit = () => ({
   key1: 'value1',
   key2: 'value2',
   key3: 'value3',
@@ -138,7 +137,7 @@ let obArrow= ()=> ({
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // console.log(objectLit());
-console.log(obArrow);
+console.log(objectLit);
 
 
 // let sumAndProduct = function(a, b) {
@@ -162,9 +161,7 @@ console.log(sumAndProduct2(3, 9));
 //   return `Hello, ${name}!`;
 // };
 
-let message2 = (name) => {
-  return `Hello, ${name}!`;
-};
+let message2 = (name) =>`Hello, ${name}!`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // console.log(message('Allie'));
@@ -186,6 +183,7 @@ console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
+// the construtor cant be converted to an arrow funation
 
 
 Student.prototype.greeting = function() {
@@ -198,6 +196,7 @@ console.log(joe.greeting());
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
+// the prototype cant be converted to an arrow funation
 
 
 Student.courseName = function() {
